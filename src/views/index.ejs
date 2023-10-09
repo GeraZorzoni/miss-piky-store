@@ -1,21 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="/css/normalize.css" />
-    <link rel="stylesheet" href="/css/index.css" />
+  <%- include("partials/head") %>
 
     <title>Universo Piky</title>
 </head>
-<header>
-    <img src="/logos/logo-ojo.jpeg" alt="logo" class="w-30 .text-center .mx-auto">
-</header>
 
 <body>
+  <%- include("partials/header") %>
 
+    <img src="/images/logos/logo-miss-piky.jpeg" alt="logo" class="main-banner" />
+
+    <main class="main-body">
+      <h2 class="title-newest">New Piky</h2>
+
+      <div class="newest-products">
+        <div class="new-product">
+          <p>Bebe</p>
+          <img src="/images/products/producto-muestra-1.jpeg" alt="imagen" />
+        </div>
+
+        <div class="new-product">
+          <p>Bebe</p>
+          <img src="/images/products/producto-muestra-2.jpeg" alt="" />
+        </div>
+
+        <div class="new-product">
+          <p>Bebe</p>
+          <img src="/images/products/producto-muestra-3.jpeg" alt="" />
+        </div>
+      </div>
+
+      <div class="category-about">
+        <img src="/images/sport-women.jpg" alt="" />
+        <p>
+          Moda tejida con amor
+        </p>
+      </div>
+
+      <div class="category-about style-about">
+        <img src="/images/style-man.jpg" alt="" />
+        <p>
+          Diseñados con amor
+        </p>
+      </div>
+
+      <div class="banner-bottom">
+
+        <div class="image-text">Belleza en hilos</div>
+      </div>
+    </main>
+
+    <%- include("partials/footer") %>
 </body>
 
 </html>

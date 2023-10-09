@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <%- include("partials/head", {title: 'Todos los productos' }) %>
+
+    <link rel="stylesheet" href="/css/products.css" />
+
+    <title>Kairos</title>
+
+</head>
+
+
+
+<body>
+
+  <%- include("partials/header") %>
+
+  <main>
+
+    <div class="banner-product">
+
+        <img src="/images\banner.jpeg" alt="">
+
+    </div>
+
+    <div class="title-products">
+
+        <h2>Relojes</h2>
+
+    </div>
+
+    <!-- Contenedor general -->
+    <div class="main-section">
+
+      
+
+        <!-- Contenedor de filtrados -->
+        <div class="main-filters">
+
+          <p>Categorias</p>
+          <ul>
+            <li>Clasicos</li>
+            <li>Deportivos</li>
+          </ul>
+
+          <p>Marcas</p>
+          <ul>
+            <li>Rolex</li>
+            <li>Garmin</li>
+          </ul>
+
+        </div>
+
+        <!-- Contenedor de productos -->
+        <div class="main-products">
+
+
+          <section>
+
+            <% products.forEach(product=> { %>
+
+              <%- include("partials/productCard", {product}) %>
+
+            <% }) %>
+
+          </section>
+          
+
+        </div>
+
+    </div>
+
+  </main>
+
+
+
+  <%- include("partials/footer") %>
+
+</body>
+
+</html>
