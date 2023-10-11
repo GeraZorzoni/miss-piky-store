@@ -1,0 +1,16 @@
+PALETA COLORES tipografia
+
+tipografia: MAELY
+
+
+CREMITA
+#FAEADC
+
+OFF WHITE
+#F2F1EF
+
+BEIGE
+#D9B18E
+
+NEGRO
+#000000
