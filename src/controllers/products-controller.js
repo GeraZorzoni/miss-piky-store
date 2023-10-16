@@ -4,27 +4,27 @@ const controller = {
   // Root - Show all products
   index: (req, res) => {
     const products = productServices.getAllProducts();
-    res.render("products", { products });
+    res.render("products/products", { products });
   },
 
   productDetail: (req, res) => {
-    res.render("productDetail");
+    res.render("products/productDetail");
   },
   // DETAIL - Detail from one product ID
   detailById: (req, res) => {
     const id = req.params.id;
     const product = productServices.getProduct(id);
-    res.render("detailById", { product });
+    res.render("products/detailById", { product });
   },
   // CART
   productCart: (req, res) => {
-    res.render("productCart");
+    res.render("products/productCart");
   },
 
   // ADD PRODUCT
   // form to create
   add: (req, res) => {
-    res.render("productAdd");
+    res.render("products/productAdd");
   },
   // Method to store data from form
   store: (req, res) => {
@@ -55,7 +55,7 @@ const controller = {
   edit: (req, res) => {
     const id = req.params.id;
     const product = productServices.getProduct(id);
-    res.render("productEdit", { product });
+    res.render("products/productEdit", { product });
   },
   update: (req, res) => {
     const product = req.body;

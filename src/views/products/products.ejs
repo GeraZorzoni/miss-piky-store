@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-  <%- include("partials/head", {title: 'Todos los productos' }) %>
+  <%- include('../partials/head.ejs') %>
 
     <link rel="stylesheet" href="/css/products.css" />
 
@@ -14,7 +14,7 @@
 
 <body>
 
-  <%- include("partials/header") %>
+  <%- include("../partials/header") %>
 
     <main>
 
@@ -55,7 +55,7 @@
 
             <% products.forEach(product=> { %>
 
-              <%- include("partials/productCard", {product}) %>
+              <%- include("../partials/productCard", {product}) %>
 
                 <% }) %>
 
@@ -70,7 +70,7 @@
 
 
 
-    <%- include("partials/footer") %>
+    <%- include("../partials/footer") %>
 
 </body>
 
